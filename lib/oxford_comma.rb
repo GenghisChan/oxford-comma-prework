@@ -5,6 +5,6 @@ def oxford_comma(array)
     array.join(" and ")
   elsif array.length == 3
     deleted = array.delete_at(-1)
-    array.join(", ") << " and #{deleted}"
+    array.join(", ") << ", and #{deleted}"
   end
 end
